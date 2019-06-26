@@ -51,7 +51,8 @@ def setup(kernel_language='Python',use_petsc=False, outdir='./_output', solver_t
     cells_number = int(params['cells_number'])
     nw = int(params['wall_position']) 
     wall_height = float(params['wall_height'])
-
+    alpha = float(params['alpha'])
+    
     x = pyclaw.Dimension(xlower, xupper, cells_number, name='x')
     domain = pyclaw.Domain(x)
     state = pyclaw.State(domain, 2, 2)
