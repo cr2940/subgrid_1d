@@ -50,7 +50,6 @@ def setup(kernel_language='Python',use_petsc=False, outdir='./_output', solver_t
     xupper = float(params['xupper'])
     cells_number = int(params['cells_number'])
     nw = int(params['wall_position']) 
-    alpha = float(params['alpha'])
     wall_height = float(params['wall_height'])
 
     x = pyclaw.Dimension(xlower, xupper, cells_number, name='x')
