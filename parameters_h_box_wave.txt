@@ -4,4 +4,4 @@ cells_number=32
 wall_position=16
 fraction=0.001
 wall_height=1.75
-
+alpha=0.001
